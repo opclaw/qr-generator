@@ -1,0 +1,53 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.sizeControl {
+  margin-bottom: 24px;
+}
+
+.sizeControl label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.sizeControl input {
+  width: 100%;
+}
+
+.result {
+  text-align: center;
+}
+
+.canvas {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.downloadBtn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
