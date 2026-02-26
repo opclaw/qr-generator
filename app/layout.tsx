@@ -17,11 +17,13 @@ export const metadata: Metadata = {
     siteName: 'QR Generator',
     title: 'QR Code Generator — Create QR Codes',
     description: 'Generate QR codes for URLs, text, WiFi, and more.',
+    images: ['/og-image.svg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'QR Code Generator',
     description: 'Generate QR codes for URLs, text, WiFi, and more.',
+    images: ['/og-image.svg'],
   },
   robots: { index: true, follow: true },
 }
