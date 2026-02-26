@@ -148,7 +148,7 @@ export default function Home() {
           {qrUrl && (
             <div className="text-center">
               <div 
-                className="inline-block p-4 bg-white rounded-xl border border-slate-200 shadow-lg mb-4 relative transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:shadow-xl hover:-translate-y-1"
+                className="inline-block p-6 md:p-8 bg-white rounded-xl border border-slate-200 shadow-lg mb-6 relative transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:shadow-xl hover:-translate-y-1"
                 role="img"
                 aria-label={imageLoaded ? `QR code for: ${text}` : 'Generating QR code...'}
               >
