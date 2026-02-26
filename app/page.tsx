@@ -176,7 +176,7 @@ export default function Home() {
               <button 
                 onClick={downloadQR} 
                 disabled={!imageLoaded}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-br from-fuchsia-600 to-purple-700 hover:from-fuchsia-700 hover:to-purple-800 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-medium rounded-xl transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:shadow-lg hover:-translate-y-0.5"
+                className="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-br from-fuchsia-600 to-purple-700 hover:from-fuchsia-700 hover:to-purple-800 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-medium rounded-xl transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:shadow-lg hover:-translate-y-0.5"
                 aria-label="Download QR code as PNG image"
               >
                 <span aria-hidden="true">💾</span> 
