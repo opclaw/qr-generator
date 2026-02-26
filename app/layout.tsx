@@ -3,6 +3,9 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://qr-generator.vercel.app'),
+  alternates: {
+    canonical: 'https://qr-generator.vercel.app',
+  },
   title: 'QR Code Generator — Create QR Codes | Free Online Tool',
   description: 'Generate QR codes for URLs, text, WiFi, and more. Free online QR code creator.',
   keywords: ['qr code generator', 'qr generator', 'create qr code', 'qr code maker'],
