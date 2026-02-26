@@ -82,14 +82,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-fuchsia-500 to-purple-600 text-3xl shadow-xl mb-6" aria-hidden="true">📱</div>
-            <h1 id="hero-heading" className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">QR Code Generator</h1>
+            <h1 id="hero-heading" className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-4">QR Code Generator</h1>
             <p className="text-lg md:text-xl text-slate-600">Create QR codes for URLs, text, WiFi, and more.</p>
           </div>
         </div>
       </section>
 
       <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full" role="main">
-        <div className="bg-white rounded-2xl border border-slate-200 shadow-lg p-6 md:p-8">
+        <div className="bg-white rounded-2xl border border-slate-200 shadow-lg p-6 md:p-8 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:shadow-xl hover:-translate-y-1">
           <div className="mb-6">
             <label htmlFor="qr-content" className="block text-sm font-medium text-slate-700 mb-2">
               Content
@@ -100,7 +100,7 @@ export default function Home() {
               value={text}
               onChange={(e) => setText(e.target.value)}
               placeholder="Enter URL or text..."
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-fuchsia-500 focus:ring-2 focus:ring-fuchsia-200 outline-none transition-all"
+              className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-fuchsia-500 focus:ring-2 focus:ring-fuchsia-200 outline-none transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]"
               aria-describedby="content-help"
             />
             <div id="content-help" className="mt-2 flex justify-between text-sm">
@@ -148,7 +148,7 @@ export default function Home() {
           {qrUrl && (
             <div className="text-center">
               <div 
-                className="inline-block p-4 bg-white rounded-xl border border-slate-200 shadow-lg mb-4 relative"
+                className="inline-block p-4 bg-white rounded-xl border border-slate-200 shadow-lg mb-4 relative transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:shadow-xl hover:-translate-y-1"
                 role="img"
                 aria-label={imageLoaded ? `QR code for: ${text}` : 'Generating QR code...'}
               >
@@ -176,7 +176,7 @@ export default function Home() {
               <button 
                 onClick={downloadQR} 
                 disabled={!imageLoaded}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-fuchsia-600 hover:bg-fuchsia-700 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-medium rounded-xl transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-br from-fuchsia-600 to-purple-700 hover:from-fuchsia-700 hover:to-purple-800 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-medium rounded-xl transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:shadow-lg hover:-translate-y-0.5"
                 aria-label="Download QR code as PNG image"
               >
                 <span aria-hidden="true">💾</span> 
@@ -187,7 +187,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="bg-slate-900 text-slate-400 py-12" role="contentinfo">
+      <footer className="bg-slate-800 text-slate-400 py-12" role="contentinfo">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm">© 2024 SmartOK Tools. Free online tools.</p>
         </div>
