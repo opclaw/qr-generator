@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import DonationButton from './components/DonationButton'
 
 export default function Home() {
   const [text, setText] = useState('https://example.com')
@@ -189,7 +190,10 @@ export default function Home() {
 
       <footer className="bg-slate-800 text-slate-400 py-12" role="contentinfo">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm">© 2024 SmartOK Tools. Free online tools.</p>
+          <p className="text-sm mb-4">© 2024 SmartOK Tools. Free online tools.</p>
+          <div className="flex justify-center">
+            <DonationButton username="smartok" />
+          </div>
         </div>
       </footer>
     </div>
